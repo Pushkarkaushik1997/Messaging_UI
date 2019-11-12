@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat</title>
+    <link href="main.css" type="text/css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script>
+      var plus;
+      $(document).ready(function(){
+        plus = document.getElementById("plus");
+        plus.addEventListener("click", plusToggle);
+      });
+
+      function plusToggle() {
+        plus.classList.toggle("plus--active");
+      }
+
+    </script>
+    <style>
+    .row
+    {
+      margin: 0px !important;
+      padding: 0px !important;
+    }
+    .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9,
+     .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, 
+     .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10,
+      .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, 
+      .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3,
+       .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, 
+       .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto 
+       {margin: 0px !important;
+      padding: 0px !important;}
+    </style>
+  </head>
+
+  <body>
+        <div class="row" style="background-color: rgb(255, 255, 255);">
+                <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                  <a class="navbar-brand" href="#">
+                    <img src="logo.jpg" alt="logo" style="width:80%; " />
+                  </a>
+                </div>
+                <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                  <a class="navbar-brand " href="#" >
+                    <img src="users.svg" alt="logo" style="width:30%; height:40px; margin-left: 240px;" /> Groups </a
+                  ><a class="navbar-brand" href="#">
+                    <img src="message-square.svg" alt="logo" style="width:20%; height:40px; margin-left: 140px;" /> Messages</a
+                  ><a class="navbar-brand" href="#">
+                    <img src="video.svg" alt="logo" style="width:20%; height:40px; margin-left: 110px; " /> VideoCalls
+                  </a>
+                </div>
+
+                <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                        <a class="navbar-brand " href="#" >
+                                <img src="help-circle.svg" alt="logo" style="width:100%;height: 70%;" /> </a>
+                                <a class="navbar-brand " href="#" >
+                                        <img src="bell.svg" alt="logo" style="width:100%;height: 70%;" /> </a>   
+                                        
+                                                <img src="dp.jpg" class="rounded-circle user_img_msg" /> Pushkar
+                                                <drop class="downarrow"> </drop>       
+                        
+                </div>
+              </div>
+
+             
+    <div class="container-fluid h-100">
+    <div class="row">
+      <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+           
+        </div>
+        <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9"> 
+          <h1 style="margin-top: 20px;"> <img src="message-square.svg" alt="logo" style="height:40px;" />Messages</h1></div>
+      </div>
+   
+
+
+      <div class="row justify-content-center h-90">
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <div style="height: 20%;">
+                <div >
+                  <img
+                  src="dp.jpg" style="display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                  border: 10px black;
+                  width: 30%; height: 110px;"
+                  class="rounded-circle user_img"/> <h6 style="text-align: center; margin-top: 10px;">Life starts at the end of your comfort zone.</h6>
+                </div>
+                <div>
+                  <button class="button button4"><img src="message-square.svg" alt="logo" style=" height:20px; margin-left: 40px;" /> Messages</a
+                    ></button>
+                    <h3 style="text-align: center; margin-top: 4px; font-size: 20px;">Chats</h3>
+                    <h3 style="text-align: center; font-size: 20px;">Send Messages</h3>
+                </div>
+                <div>
+                  <button class="button2 button4"><img src="users.svg" alt="logo" style=" height:20px; margin-left: 40px;" /> Groups</a
+                    ></button>
+                    <h3 style="text-align: center; margin-top: 4px; font-size: 20px;">History</h3>
+                    <h3 style="text-align: center; font-size: 20px;">Create Groups</h3>
+                </div>
+                <div>
+                  <button class="button2 button4"><img src="video.svg" alt="logo" style=" height:20px; margin-left: 40px;" /> Video Calls</a
+                    ></button>
+                    <h3 style="text-align: center; margin-top: 4px; font-size: 20px;">History</h3>
+                    <h3 style="text-align: center; font-size: 20px;">Calls</h3>
+                </div>
+            </div>
+
+          </div>
+
+        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3  chat">
+          <div class="card mb-sm-3 mb-md-0 contacts_card">
+            <div class="card-header">
+              <div class="input-group">
+                <h2>Chats</h2>
+                <div class="input-group-prepend">
+                </div>
+              </div>
+            </div>
+            <div class="card-body contacts_body">
+              <ui class="contacts">
+                <li class="active">
+                  <div class="d-flex bd-highlight">
+                    <div class="img_cont">
+                      <img
+                        src="dp2.jpg"
+                        class="rounded-circle user_img"
+
+                      />
+                      <span class="online_icon"></span>
+                      
+                    </div>
+                    <div class="user_info">
+                      <span>Olivia</span>
+                      <p>Bye, see you <br>
+                      19-11-2019 | 9:12 am<br> 20replies </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex bd-highlight">
+                    <div class="img_cont">
+                      <img
+                        src="dp3.jpg"
+                        class="rounded-circle user_img"
+                      />
+                      <span class="online_icon offline"></span>
+                    </div>
+                    <div class="user_info">
+                      <span>Alexander </span>
+                      <p>I"ll send the mail soon<br>
+                        19-11-2019 | 9:12 am<br> 20replies </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex bd-highlight">
+                    <div class="img_cont">
+                      <img
+                        src="dp4.jpg"
+                        class="rounded-circle user_img"
+                      />
+                      <span class="online_icon"></span>
+                    </div>
+                    <div class="user_info">
+                      <span>Sophia Richi</span>
+                      <p>Thanks, how about an ice-cream?<br>
+                        19-11-2019 | 9:12 am<br> 20replies </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex bd-highlight">
+                    <div class="img_cont">
+                      <img
+                        src="dp5.jpg"
+                        class="rounded-circle user_img"
+                      />
+                      <span class="online_icon offline"></span>
+                    </div>
+                    <div class="user_info">
+                      <span>Ethan Malson</span>
+                      <p>Wohoo<br>
+                        19-11-2019 | 9:12 am<br> 20replies </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex bd-highlight">
+                    <div class="img_cont">
+                      <img
+                        src="dp6.jpg"
+                        class="rounded-circle user_img"
+                      />
+                      <span class="online_icon offline"></span>
+                    </div>
+                    <div class="user_info">
+                      <span>Rashid Samim</span>
+                      <p>Rashid left 50 mins ago<br>
+                        19-11-2019 | 9:12 am<br> 20replies </p>
+                    </div>
+                  </div>
+                </li>
+              </ui>
+            </div>
+            <div class="card-footer"></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 chat">
+          <div class="card">
+            <div class="card-header msg_head">
+              <div class="d-flex bd-highlight">
+                <div class="img_cont">
+                  <img
+                    src="eye.svg"
+                    class="rounded-circle user_img"
+                  />
+                  <span class="online_icon"></span>
+                </div>
+                <div class="user_info">
+                  <span>Olivia Sol</span>
+                  <p>Replies
+                      
+                  </p>
+                </div>
+                <div class="video_cam">
+                  <span><i class="fas fa-video"></i></span>
+                  <span><i class="fas fa-phone"></i></span>
+                </div>
+              </div>
+              <span id="action_menu_btn"
+                ><i class="fas fa-ellipsis-v"></i
+              ></span>
+              <div class="action_menu">
+                <ul>
+                  <li><i class="fas fa-user-circle"></i> View profile</li>
+                  <li><i class="fas fa-users"></i> Add to close friends</li>
+                  <li><i class="fas fa-plus"></i> Add to group</li>
+                  <li><i class="fas fa-ban"></i> Block</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body msg_card_body">
+              <div class="d-flex justify-content-start mb-4">
+                <div class="img_cont_msg">
+                  <img
+                    src="dp2.jpg"
+                    class="rounded-circle user_img_msg"
+                  />
+                </div>
+                <div class="msg_cotainer">
+                  Hi, Pushkar, what's up?
+                  <span class="msg_time">8:40 AM, Today</span>
+                </div>
+              </div>
+              <div class="d-flex justify-content-end mb-4">
+                <div class="msg_cotainer_send">
+                  Hey, Olivia am too good... what bout you?
+                  <span class="msg_time_send">8:55 AM, Today</span>
+                </div>
+                <div class="img_cont_msg">
+                  <img src="dp.jpg" class="rounded-circle user_img_msg" />
+                </div>
+              </div>
+              <div class="d-flex justify-content-start mb-4">
+                <div class="img_cont_msg">
+                  <img
+                    src="dp2.jpg"
+                    class="rounded-circle user_img_msg"
+                  />
+                </div>
+                <div class="msg_cotainer">
+                  I am good too, what's your weekend plans?
+                  <span class="msg_time">9:00 AM, Today</span>
+                </div>
+              </div>
+              <div class="d-flex justify-content-end mb-4">
+                <div class="msg_cotainer_send">
+                  Going for a movie, am having 2 passes would you like to join me?
+                  <span class="msg_time_send">9:05 AM, Today</span>
+                </div>
+                <div class="img_cont_msg">
+                  <img src="dp.jpg" class="rounded-circle user_img_msg" />
+                </div>
+              </div>
+              <div class="d-flex justify-content-start mb-4">
+                <div class="img_cont_msg">
+                  <img
+                    src="dp2.jpg"
+                    class="rounded-circle user_img_msg"
+                  />
+                </div>
+                <div class="msg_cotainer">
+                  You know I never say never..
+                  <span class="msg_time">9:07 AM, Today</span>
+                </div>
+              </div>
+              <div class="d-flex justify-content-end mb-4">
+                <div class="msg_cotainer_send">
+                  Hahaha .. yup! see you at Star MAll.  
+                  <span class="msg_time_send">9:10 AM, Today</span>
+                </div>
+                <div class="img_cont_msg">
+                  <img src="dp.jpg" class="rounded-circle user_img_msg" />
+                </div>
+              </div>
+              <div class="d-flex justify-content-start mb-4">
+                <div class="img_cont_msg">
+                  <img
+                    src="dp2.jpg"
+                    class="rounded-circle user_img_msg"
+                  />
+                </div>
+                <div class="msg_cotainer">
+                  Alright, by the way I have one surprise for you.
+                  <span class="msg_time">9:12 AM, Today</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="input-group">
+                <div class="input-group-append">
+                  <span class="input-group-text attach_btn">
+                    <div class="centered">
+                      <div class="plus" id="plus">
+                        <div class="plus__line plus__line--v">
+                          <a href="#" class="plus__link "><img src="mic.svg">Audio</a>
+                          <a href="#" class="plus__link "><img src="video.svg">&nbsp; Video</a>
+                          <a href="#" class="plus__link "><img src="image.svg">&nbsp;Image</a></a>
+                          <a href="#" class="plus__link "><img src="file-text.svg">&nbsp;Text</a></a>
+                        </div>
+                        <div class="plus__line plus__line--h"></div>
+                      </div>
+                    </div>
+                  </span>
+                </div>
+                <textarea
+                  name=""
+                  class="form-control type_msg"
+                  placeholder="Type your message..."
+                ></textarea>
+                <div class="input-group-append">
+                  <span class="input-group-text send_btn"
+                    ><i class="fas fa-location-arrow"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
